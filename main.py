@@ -52,6 +52,7 @@ if tab_home:
     tab_alg.write("Rutini hiç sevmeyen algılayanlar, her zaman alternatif arayışındadırlar. Deneylere, maceraya, yeni keşiflere açıklardır.Açık fikirli ve rahattırlar.")
     tab_home.subheader("8 harf kombinasyonundan toplam 16 tane kişilik tipi ortaya çıkıyor:")
     tab_home.image("img/data_vis/vs/Bb4Wq1l.jpeg")
+
 # Data visualization page
 if tab_vos:
     tab_vos.image("img/data_vis/vs/mbti9.png")
@@ -63,9 +64,6 @@ if tab_vos:
     tab_vos.title("Veri görselleştirme")
     df = get_data()
 
-    # for i in df['type'].unique():
-    #     df2 = df[df['type'] == i]
-    #     wordcloud = WordCloud().generate(df2['posts'].to_string())
 
     # 1. Distribution of mbti types
     tab_vos.subheader("📊 Her bir kişilik tipinin dağılımı")
@@ -75,17 +73,7 @@ if tab_vos:
     plt.yticks(fontsize=24, rotation=0)
     tab_vos.pyplot(fig)
 
-
-    # # 2. Wordcloud
-    # tab_vos.subheader("📊 Tüm postlardakı kelimelerin WordCloud gösterimi")
-    # wordcloud = WordCloud().generate(df['posts'].to_string())
-    #
-    # plt.imshow(wordcloud, interpolation='bilinear')
-    # plt.axis("off")
-    # plt.show()
-    # tab_vos.pyplot()
-
-    #3. Distribution of mBTI functions
+    #3. Distribution of MBTI functions
     tab_vos.subheader("📊 Kişilik tipi fonksiyonlarının dağılımı")
     tab_vos.image("img/data_vis/Distribution_func.png")
 
@@ -141,6 +129,7 @@ def combine_inputs(input1, input2, input3, input4):
     # Implement logic to combine inputs as needed
     combined_input = f"{input1} {input2} {input3} {input4}"
     return combined_input
+
 ## images
 image1 = "img/image11.jpg"
 image2 = "img/image7.jpg"
