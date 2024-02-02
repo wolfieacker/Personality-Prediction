@@ -16,6 +16,7 @@ lemmatiser = WordNetLemmatizer()
 
 # Remove the stop words for speed
 import nltk
+nltk.download("wordnet")
 nltk.download("stopwords")
 useless_words = stopwords.words("english")
 
