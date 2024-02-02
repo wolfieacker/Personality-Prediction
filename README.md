@@ -1,3 +1,9 @@
+![](intro.png){:width="400px"}
+
+# 👇 CHECK THE APP FROM HERE! 👇
+
+### ✨ https://findmypersonality.streamlit.app ✨
+
 ## 1.	Veri seti hikayesi
 
 Veri PersonalityCafe forumu üzerinden toplandı.
